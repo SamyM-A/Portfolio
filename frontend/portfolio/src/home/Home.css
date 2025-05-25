@@ -1,0 +1,33 @@
+#home {
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  padding: 32px 24px;
+
+}
+
+
+
+#home h1 {
+  font-size: 2.8rem;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#home #h2-1 {
+  font-size: 1.7rem;
+  margin: 32px 0 12px 0;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+}
+
+#home #p-1 {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #e0e6ff;
+  text-align: justify;
+  float: right;
+}

@@ -1,0 +1,11 @@
+#header {
+    background-color: #000a75;
+    color: #fff;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+#header h1 {
+    flex: 1;
+}

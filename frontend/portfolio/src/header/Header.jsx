@@ -4,8 +4,7 @@ import './header.css';
 const Header = () => {
     return (
         <div id="header">
-            <img src="" alt="" />
-            <h1>Portfolio</h1>
+            <h1>SMA</h1>
             <nav id="nav">
                 <NavLinks />
             </nav>

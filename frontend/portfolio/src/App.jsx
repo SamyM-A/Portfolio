@@ -1,9 +1,9 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './home/Home'
-import Root from './header/root'
+import Root from './header/Root'
 import About from './about/About'
-import Projects from './projects/projects'
+import Projects from './projects/Projects'
 
 function App() {
 

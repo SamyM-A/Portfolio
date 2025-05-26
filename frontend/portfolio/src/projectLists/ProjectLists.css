@@ -1,0 +1,9 @@
+.projectsListe #h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.projectsListe{
+    margin: 100px auto 100px auto;
+    width: 1200px;
+}

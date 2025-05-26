@@ -1,6 +1,6 @@
-const About = () => {
+const Contact = () => {
     return (
         <h1>About me !</h1>
     )
 }
-export default About;
+export default Contact;

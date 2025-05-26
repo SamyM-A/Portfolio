@@ -5,6 +5,44 @@
 }
 
 body{
-    background-color: #00053d;
-    color: white;
+    background-color: #FFF8ED;
+    color: rgb(0, 0, 0);
+}
+
+/* DARMODE EN BAS ! */
+
+body.darkmode {
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+body.darkmode #header {
+    background-color: #242424;
+    color: #f5f5f5;
+
+}
+
+body.darkmode #intersection{
+    background-color: #242424;
+}
+
+body.darkmode #header a {
+    color: #f5f5f5;
+}
+
+body.darkmode a {
+    color: #f5f5f5;
+}
+
+body.darkmode .footer {
+    background-color: #242424;
+}
+
+body.darkmode .footer p {
+    color: #f5f5f5;
+}
+
+body.darkmode #header button {
+    background-color: #ffffff;
+
 }

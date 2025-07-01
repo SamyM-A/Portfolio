@@ -13,7 +13,7 @@ function App() {
       element: <Root />,
       children: [
         {path: "/", element: <Home />},
-        {path: "/projects", element: <ProjectsLists />},
+        {path: "/projets", element: <ProjectsLists />},
         {path: "/contact", element: <Contact />},
       ]
     }

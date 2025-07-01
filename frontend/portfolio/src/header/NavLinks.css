@@ -10,10 +10,3 @@
     padding: 8px 18px;
     border-radius: 6px;
 }
-
-#nav-links a:hover {
-    background: #000000;
-    color: #FFF5E4;
-    transition: 1s;
-    border-radius: 15px;
-}

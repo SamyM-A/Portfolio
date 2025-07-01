@@ -7,18 +7,12 @@ const Header = () => {
 
     const [darkMode, setDarkMode] = useState(false);
 
-    const useToggle = () => {
-        setDarkMode(!darkMode);
-        document.body.classList.toggle('darkmode', !darkMode);
-    }
-
     return (
         <div id="header">
             <h1><Link to="/">SMA</Link></h1>
             <nav id="nav">
                 <NavLinks />
             </nav>
-            <button onClick={useToggle}>{darkMode ? "🌙" : "☀️"}</button>
         </div>
     )
 }

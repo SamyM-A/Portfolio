@@ -5,7 +5,6 @@ const Footer = () => {
             <ul>
                 <a href="">Contact</a>
                 <a href="">Email</a>
-                <a href="">Téléphone</a>
             </ul>
             <p>Copyright © Samy Mizi Allaoua 2025.</p>
         </div>

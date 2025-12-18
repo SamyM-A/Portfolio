@@ -1,4 +1,4 @@
-import "./Technologie.css";
+import "../App.css"
 const Technologie = (props) => {
 
     return (

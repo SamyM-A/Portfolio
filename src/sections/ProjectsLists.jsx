@@ -1,6 +1,6 @@
-import "./ProjectLists.css"
+import "../App.css"
 import projects from "../assets/projets/projets";
-import Project from "../projects/Projects";
+import Project from "../components/Projects";
 
 const ProjectsLists = () => {
     return (

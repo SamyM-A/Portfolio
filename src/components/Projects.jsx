@@ -1,4 +1,4 @@
-import "./Projects.css"
+import "../App.css"
 const Projects = (props) => {
     
     if (props.id % 2 === 0) {

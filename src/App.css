@@ -1,10 +1,320 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
+
+/* header */
+/* header */
+/* header */
+
+#header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 32px;
+  background-color: #000000;
 }
 
-body{
-    background-color: #010011;
+#header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+#header .nav {
+  display: flex;
+  gap: 20px;
+}
+
+#header button {
+  background: none;
+  color: white;
+  border: 1px solid #2a2a2a;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#header button:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+
+
+
+
+/* contact */
+/* contact */
+/* contact */
+
+#contact {
+    margin: 100px auto 100px auto;
+    width: 800px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: #000000;
+}
+
+#h1contact{
+    text-align: center;
+    font-size: 60px;
+    margin: 100px 0px 100px 0px;
+}
+
+/* DIV */
+
+
+#contact #email{
+    margin: 0px 0px 0px 150px;
+}
+
+
+#contact #email, #nom{
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    background: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+#contact #email:focus,
+#contact #nom:focus,
+#contact #message:focus {
+    outline: none;
+}
+
+
+#contact #message{
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    resize: none;
+    background: none;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+}
+
+
+
+
+
+#contact button{
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    margin: 50px 0px;
+    background: none; /* Green */
     color: rgb(255, 255, 255);
+    border: 3px solid #ffffff; /* Green */
+    cursor: pointer;
+}
+
+
+/* footer */
+/* footer */
+/* footer */
+
+#home1 {
+  max-width: 1300px;
+  margin: 100px auto 210px auto;
+  padding: 32px 24px;
+}
+
+#home1 h1 {
+  font-size: 60px;
+  margin: 70px 0px;
+  text-align: center;
+}
+
+#home1 #p1 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#home1 #p2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#home1 img {
+  float: left;
+  margin: 10px 100px 0px 0px;
+  border-radius: 100%;
+}
+
+/* Intersection fait pas partie du div #home ! */
+
+#intersection{
+  margin: 0px 0px 100px 0px;
+  width: 100%;
+  padding: 0px 0px 200px 0px;
+  background-color: #000000;
+}
+
+/* 2em partie de la page */
+
+#home2 {
+  margin: 0px auto 100px auto;
+}
+
+#home2 h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+#home2 h3 {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.ul{
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+}
+
+
+
+
+/* Home*/
+/* Home*/
+/* Home*/
+
+#home1 {
+  max-width: 1300px;
+  margin: 100px auto 210px auto;
+  padding: 32px 24px;
+}
+
+#home1 h1 {
+  font-size: 60px;
+  margin: 70px 0px;
+  text-align: center;
+}
+
+#home1 #p1 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#home1 #p2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#home1 img {
+  float: left;
+  margin: 10px 100px 0px 0px;
+  border-radius: 100%;
+}
+
+/* Intersection fait pas partie du div #home ! */
+
+#intersection{
+  margin: 0px 0px 100px 0px;
+  width: 100%;
+  padding: 0px 0px 200px 0px;
+  background-color: #000000;
+}
+
+/* 2em partie de la page */
+
+#home2 {
+  margin: 0px auto 100px auto;
+}
+
+#home2 h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+#home2 h3 {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.ul{
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+}
+
+
+
+
+
+
+
+/* liste projet */
+/* liste projet */
+/* liste projet */
+
+.projectsListe #h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.projectsListe{
+    margin: 100px auto 100px auto;
+    width: 1200px;
+}
+
+
+ /* projet  */
+ /* projet  */
+ /* projet  */
+
+
+
+
+.projects img{
+    float: left;
+    margin: 0px 70px 0px 70px;
+    border-radius: 50px;
+}
+
+.projects h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0px 40px 0px;
+}
+
+.projects p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects {
+    margin: 100px 0px 200px 0px;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+ /* technologie  */
+ /* technologie  */
+ /* technologie  */
+
+
+
+.tech img{
+    /* border-radius: 50%; */
+    margin: 0px 0px 15px 0px;
+}
+
+.tech p{
+    text-align: center;
 }

@@ -16,28 +16,25 @@ const TechnologieList = () => {
 
   return (
     <div id="home2">
+
         <h1>Mes technologies !</h1>
         
         <h3>Langage de programmation</h3>
-        <div className="scroller">  
-          <ul className="scroller__inner">{langue}</ul>
-          <ul className="scroller__inner">{langue}</ul>
-          <ul className="scroller__inner">{langue}</ul>
+        <div className="carousel">  
+          <div className="groupe">{langue}</div>
+          <div className="groupe">{langue}</div>
         </div>
 
         <h3>Frameworks</h3>
-          <div className="scroller">  
-          <ul className="scroller__inner">{frameworks}</ul>
-          <ul className="scroller__inner">{frameworks}</ul>
-          <ul className="scroller__inner">{frameworks}</ul>
-          <ul className="scroller__inner">{frameworks}</ul>
+        <div className="carousel">  
+          <div className="groupe">{frameworks}</div>
+          <div className="groupe">{frameworks}</div>
         </div>
         
         <h3>Autre technologie</h3>
-          <div className="scroller">  
-          <ul className="scroller__inner">{autre}</ul>
-          <ul className="scroller__inner">{autre}</ul>     
-          <ul className="scroller__inner">{autre}</ul>     
+        <div className="carousel">  
+          <div className="groupe">{autre}</div>
+          <div className="groupe">{autre}</div>
         </div>
     </div>
   );

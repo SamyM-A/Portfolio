@@ -314,14 +314,14 @@
  /* technologie Liste */
 
 
- /* boite d'animation */
-.scroller {
-  position: relative;
-  overflow: hidden;
-  width: 40%;
-  margin: 0 auto;
+/* boite d'animation */
+.carousel {
+  margin: 100px auto;
+  width: 30%;
+  display: flex;
+  overflow-x: auto;
 
-  -webkit-mask: linear-gradient(
+    -webkit-mask: linear-gradient(
     to right,
     transparent 0%,
     white 15%,
@@ -335,26 +335,34 @@
     white 85%,
     transparent 100%
   );
+
 }
 
-/* on fait comme si c’était un seul long bloc */
-.scroller {
-  display: flex;
+.carousel::-webkit-scrollbar{
+  display: none;
 }
 
-.scroller__inner {
+.groupe {
   display: flex;
-  gap: 25px;
-  flex-wrap: nowrap;
-  padding: 0;
-  margin: 0 0;
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
+  animation: spin 10s infinite linear;
+  padding-right: 1em;
 
-  animation: scroll 5s linear infinite;
+  
+
+}
+
+.groupe > *{
+  flex: 0 0 5em;
+  text-align: center;
+  align-content: center;
 }
 
 /* seules les listes bougent */
-@keyframes scroll {
-  to {
-    transform: translateX(-100%);
-  }
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
 }
+

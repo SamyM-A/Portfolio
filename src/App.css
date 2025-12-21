@@ -122,33 +122,21 @@
 /* footer */
 /* footer */
 
-#home1 {
-  max-width: 1300px;
-  margin: 100px auto 210px auto;
-  padding: 32px 24px;
+.footer a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100px;
 }
 
-#home1 h1 {
-  font-size: 60px;
-  margin: 70px 0px;
-  text-align: center;
+.footer p{
+    text-align: center;
+    color: #ffffff;
 }
 
-#home1 #p1 {
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-
-#home1 #p2 {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-#home1 img {
-  float: left;
-  margin: 10px 100px 0px 0px;
-  border-radius: 100%;
+.footer{
+    padding: 100px 0px 30px 0px;
+    background-color: #000000;
 }
 
 /* Intersection fait pas partie du div #home ! */
@@ -318,4 +306,55 @@
 
 .tech p{
     text-align: center;
+}
+
+
+ /* technologie Liste  */
+ /* technologie Liste */
+ /* technologie Liste */
+
+
+ /* boite d'animation */
+.scroller {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  margin: 0 auto;
+
+  -webkit-mask: linear-gradient(
+    to right,
+    transparent 0%,
+    white 15%,
+    white 85%,
+    transparent 100%
+  );
+  mask: linear-gradient(
+    to right,
+    transparent 0%,
+    white 15%,
+    white 85%,
+    transparent 100%
+  );
+}
+
+/* on fait comme si c’était un seul long bloc */
+.scroller {
+  display: flex;
+}
+
+.scroller__inner {
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 0;
+
+  animation: scroll 5s linear infinite;
+}
+
+/* seules les listes bougent */
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
+  }
 }

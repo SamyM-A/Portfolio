@@ -35,5 +35,6 @@ const tech = [
     { img: HTML, name: "HTML", type: "autre" },
     { img: CSS, name: "CSS", type: "autre" },
     { img: Postman, name: "Postman", type: "autre" },
+    { img: null, name: "Stripe", type: "autre" },
 ]
 export default tech;

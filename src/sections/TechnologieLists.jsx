@@ -15,7 +15,7 @@ const TechnologieList = () => {
     .map((t) => <Technologie key={t.id} img={t.img} name={t.name} />);
 
   return (
-    <div id="home2">
+    <div id="technoHome">
 
         <h1>Mes technologies !</h1>
         

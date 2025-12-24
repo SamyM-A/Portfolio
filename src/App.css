@@ -14,13 +14,13 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px 32px;
-  background-color: #05051dd9; 
+  padding: 16px 70px;
+  background-color: #0C1220dd; 
   backdrop-filter: blur(8px);    
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
 }
 
-#header .logo a {
+#header a {
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -52,18 +52,20 @@
 /* contact */
 
 #contact {
-    margin: 100px auto 100px auto;
+    margin: 100px auto 0 auto;
     width: 800px;
     text-align: center;
     padding: 50px;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: #00000023;
 }
+
+
 
 #h1contact{
     text-align: center;
     font-size: 60px;
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0px ;
 }
 
 /* DIV */
@@ -118,6 +120,34 @@
 }
 
 
+
+#contactDiv #link{
+  display: flex;
+  text-decoration: none;
+}
+
+#link a{
+}
+
+#link .boite{
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0px 50px;
+  background-color: rgba(0, 0, 0, 0.349);
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+#link .boite p{
+  margin: 15px 10px;
+}
+
+
+
+
+
+
 /* footer */
 /* footer */
 /* footer */
@@ -139,39 +169,6 @@
     background-color: #000000;
 }
 
-/* Intersection fait pas partie du div #home ! */
-
-#intersection{
-  margin: 0px 0px 100px 0px;
-  width: 100%;
-  padding: 0px 0px 200px 0px;
-  background-color: #000000;
-}
-
-/* 2em partie de la page */
-
-#home2 {
-  margin: 0px auto 100px auto;
-}
-
-#home2 h1 {
-  font-size: 70px;
-  text-align: center;
-}
-
-#home2 h3 {
-  text-align: center;
-  margin: 50px 0px;
-}
-
-.ul{
-  justify-content: center;
-  gap: 50px;
-  display: flex;
-}
-
-
-
 
 /* Home*/
 /* Home*/
@@ -179,13 +176,14 @@
 
 #home1 {
   max-width: 1300px;
-  margin: 100px auto 210px auto;
-  padding: 32px 24px;
+  margin: 0 auto 0 auto;
+  padding: 120px 32px;
+  /* background-color: red; */
 }
 
 #home1 h1 {
   font-size: 60px;
-  margin: 70px 0px;
+  margin: 100px 0px;
   text-align: center;
 }
 
@@ -202,59 +200,35 @@
 
 #home1 img {
   float: left;
-  margin: 10px 100px 0px 0px;
+  margin: 50px 100px 100px 10px;
   border-radius: 100%;
 }
 
-/* Intersection fait pas partie du div #home ! */
 
-#intersection{
-  margin: 0px 0px 100px 0px;
-  width: 100%;
-  padding: 0px 0px 200px 0px;
-  background-color: #05051d;
+
+/* liste projet */
+/* liste projet */
+/* liste projet */
+
+.projectsListe{
+  max-width: 2300px;
+  margin: 100px auto 0 auto;
+  padding: 32px 32px;
+  
+  /* background-color: red; */
 }
 
-/* 2em partie de la page */
-
-#home2 {
-  margin: 0px auto 100px auto;
-}
-
-#home2 h1 {
-  font-size: 70px;
-  text-align: center;
-}
-
-#home2 h3 {
-  text-align: center;
-  margin: 50px 0px;
-}
-
-.ul{
-  justify-content: center;
-  gap: 50px;
+.projectsListeListe{
   display: flex;
+  flex-wrap: wrap;
 }
 
 
-
-
-
-
-
-/* liste projet */
-/* liste projet */
-/* liste projet */
 
 .projectsListe #h1{
     text-align: center;
     font-size: 60px;
-}
-
-.projectsListe{
-    margin: 100px auto 100px auto;
-    width: 1200px;
+    margin: 100px 0px 30px 0px;
 }
 
 
@@ -265,29 +239,42 @@
 
 
 
-.projects img{
-    float: left;
-    margin: 0px 70px 0px 70px;
-    border-radius: 50px;
+.projects .imgprojet{
+  
 }
 
 .projects h1{
-    text-align: center;
-    font-size: 30px;
-    margin: 40px 0px 40px 0px;
+  text-align: center;
+  margin: 15px 0px;
 }
 
 .projects p{
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+  margin: 15px 0px;
 }
 
+.projects:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.projects .imglang{
+  margin: 0 5px;
+}
+
+.projects a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
 .projects {
-    margin: 100px 0px 200px 0px;
-    justify-content: center;
-    display: flex;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 35px;
+    width: 500px;
+    background-color: #0c1220;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
 }
 
 
@@ -314,10 +301,31 @@
  /* technologie Liste */
 
 
+#technoHome{
+  max-width: 1300px;
+  margin: 100px auto 0 auto;
+  padding: 32px 32px;
+  /* background-color: red; */
+}
+
+#technoHome h1{
+  margin: 70px 0px 30px 0px;
+  font-size: 70px;
+  text-align: center;
+}
+
+
+#technoHome h3{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
 /* boite d'animation */
 .carousel {
-  margin: 100px auto;
-  width: 30%;
+  margin: 40px auto;
+  width: 70%;
   display: flex;
   overflow-x: auto;
 
@@ -346,11 +354,9 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  gap: 1em;
+  gap: 5em;
   animation: spin 10s infinite linear;
-  padding-right: 1em;
-
-  
+  padding-right: 5em;
 
 }
 
@@ -360,9 +366,41 @@
   align-content: center;
 }
 
+
+
 /* seules les listes bougent */
 @keyframes spin {
   from {translate: 0;}
   to {translate: -100%;}
 }
+
+
+/* CV */
+/* CV */
+/* CV */
+
+
+.cv {
+  max-width: 2300px;
+  margin: 100px auto 0 auto;
+  padding: 32px 32px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.cv > :last-child{
+  /* padding: 100px; */
+  margin: 40px 0px 0px 15%;
+}
+
+.cv h1{
+  text-align: center;
+  font-size: 70px;
+  margin: 170px 0px 30px 0px;
+  padding: 32px 32px;
+}
+
+
+
+/* phone media */
 

@@ -1,5 +1,8 @@
 import "../App.css"
 import { useState } from 'react';
+import github from "../assets/img/Github.png"
+import linkdin from "../assets/img/LinkedIn.png"
+
 const Contact = () => {
 
     const [result, setResult] = useState("");
@@ -28,17 +31,39 @@ const Contact = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div id="contactDiv">
             <h1 id="h1contact">Me contacter</h1>
-            <div id="contact">
-                <div id="nomemail">
-                    <input type="text" name="name" id="nom" placeholder="Nom" required/>
-                    <input type="text" name="email" id="email" placeholder="Email" required />
-                </div>
-                    <textarea rows={1} name="message"  id="message" type="text" placeholder="Message" required/> 
-                    <button>Envoyer ➞</button>
+            <div id="link"> 
+                    <a className="boite" href="">
+                        <img src={github} alt="" width={50}/>
+                        <p>Github Proffessionel</p>
+                    </a>
+                    <a className="boite" href="">
+                        <img src={github} alt="" width={50}/>
+                        <p>Github Scolaire</p>
+                    </a>
+                    <a className="boite"  href="https://www.linkedin.com/in/samy-mizi-allaoua-289750383/"  target="_BLANK">
+                        <img src={linkdin} alt="" width={50}/>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a className="boite"  href="https://www.linkedin.com/in/samy-mizi-allaoua-289750383/"  target="_BLANK">
+                        <img src={linkdin} alt="" width={50}/>
+                        <p>Mail</p>
+                    </a>
+        
+                <a href="mailto:samymiziallaoua@hotmail.com">ou par Mail</a>
             </div>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <div id="contact">
+                    <div id="nomemail">
+                        <input type="text" name="name" id="nom" placeholder="Nom" required/>
+                        <input type="text" name="email" id="email" placeholder="Email" required />
+                    </div>
+                        <textarea rows={1} name="message"  id="message" type="text" placeholder="Message" required/> 
+                        <button>Envoyer ➞</button>
+                </div>
+            </form>
+        </div>
     )
 }
 export default Contact;

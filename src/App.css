@@ -9,6 +9,8 @@
   top: 0;
   z-index: 1000;
 
+  width: 100%;
+
   
   display: flex;
   justify-content: space-between;
@@ -44,7 +46,12 @@
 
 }
 
-
+@media (max-width: 600px) {
+  #h2{
+    display: none;
+    background-color: red;
+  }
+}
 
 
 /* contact */
@@ -52,10 +59,10 @@
 /* contact */
 
 #contact {
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
     width: 800px;
     text-align: center;
-    padding: 50px;
+    padding: 32px 32px;
     border-radius: 50px;
     background-color: #00000023;
 }
@@ -124,24 +131,29 @@
 #contactDiv #link{
   display: flex;
   text-decoration: none;
-}
-
-#link a{
+  /* background-color: red; */
+  width: 70%;
+  margin: 0px auto;
 }
 
 #link .boite{
-  padding: 20px;
+  width: 170px;
+  height: 50px;
+  padding: 5px 30px;
   border-radius: 20px;
-  margin: 0px 50px;
+  margin: 0px auto;
   background-color: rgba(0, 0, 0, 0.349);
   display: flex;
   text-decoration: none;
   color: white;
+
 }
 
 #link .boite p{
-  margin: 15px 10px;
+  margin: 15px auto;
 }
+
+
 
 
 

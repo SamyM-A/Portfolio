@@ -1,7 +1,8 @@
 import "../App.css"
 import { useState } from 'react';
-import github from "../assets/img/Github.png"
-import linkdin from "../assets/img/LinkedIn.png"
+import github from "../assets/img/Github.png";
+import linkdin from "../assets/img/LinkedIn.png";
+import mail from "../assets/img/Mail.png"
 
 const Contact = () => {
 
@@ -35,23 +36,21 @@ const Contact = () => {
             <h1 id="h1contact">Me contacter</h1>
             <div id="link"> 
                     <a className="boite" href="">
-                        <img src={github} alt="" width={50}/>
-                        <p>Github Proffessionel</p>
+                        <img src={github} alt="" height={50} width={50}/>
+                        <p>Proffessionel</p>
                     </a>
                     <a className="boite" href="">
-                        <img src={github} alt="" width={50}/>
-                        <p>Github Scolaire</p>
+                        <img src={github} alt="" height={50} width={50}/>
+                        <p>Scolaire</p>
                     </a>
                     <a className="boite"  href="https://www.linkedin.com/in/samy-mizi-allaoua-289750383/"  target="_BLANK">
-                        <img src={linkdin} alt="" width={50}/>
+                        <img src={linkdin} alt="" height={50} width={50}/>
                         <p>LinkedIn</p>
                     </a>
-                    <a className="boite"  href="https://www.linkedin.com/in/samy-mizi-allaoua-289750383/"  target="_BLANK">
-                        <img src={linkdin} alt="" width={50}/>
+                    <a className="boite"  href="mailto:samymiziallaoua@hotmail.com" >
+                        <img src={mail} alt="" height={50} width={50}/>
                         <p>Mail</p>
                     </a>
-        
-                <a href="mailto:samymiziallaoua@hotmail.com">ou par Mail</a>
             </div>
             <form onSubmit={handleSubmit}>
                 <div id="contact">

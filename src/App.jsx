@@ -48,7 +48,7 @@ function App() {
         </section>
 
         <section ref={cvRef}>
-          <Cv/>
+          {/* <Cv/> */}
         </section>
 
         <section ref={contactRef}>

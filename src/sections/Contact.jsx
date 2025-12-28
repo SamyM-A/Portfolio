@@ -37,7 +37,7 @@ const Contact = () => {
             <div id="link"> 
                     <a className="boite" href="">
                         <img src={github} alt="" height={50} width={50}/>
-                        <p>Proffessionel</p>
+                        <p>Professionel</p>
                     </a>
                     <a className="boite" href="">
                         <img src={github} alt="" height={50} width={50}/>

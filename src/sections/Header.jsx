@@ -15,7 +15,7 @@ const Header = ({ scrollTo }) => {
                 <button onClick={() => scrollTo("accueil")}>Accueil</button>
                 <button onClick={() => scrollTo("technologie")}>Technologie</button>
                 <button onClick={() => scrollTo("projects")}>Projects</button>
-                <button onClick={() => scrollTo("cv")}>CV</button>
+                {/* <button onClick={() => scrollTo("cv")}>CV</button> */}
                 <button onClick={() => scrollTo("contact")}>Contact</button>
             </div>
         </div>

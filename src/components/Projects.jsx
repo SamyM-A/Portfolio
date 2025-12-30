@@ -1,6 +1,6 @@
 import "../App.css"
 import tech from "../assets/technologies/tech";
-import github from "../assets/img/github.png"
+import github from "../assets/img/Github.png"
 
 const Projects = (props) => {
 

@@ -58,7 +58,9 @@ const Contact = () => {
                         <input type="text" name="name" id="nom" placeholder="Nom" required/>
                         <input type="text" name="email" id="email" placeholder="Email" required />
                     </div>
+                    <div id="mess">
                         <textarea rows={1} name="message"  id="message" type="text" placeholder="Message" required/> 
+                    </div>
                         <button>Envoyer ➞</button>
                 </div>
             </form>

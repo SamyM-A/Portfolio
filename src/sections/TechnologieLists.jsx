@@ -19,7 +19,7 @@ const TechnologieList = () => {
 
         <h1>Mes technologies !</h1>
         
-        <h3>Langage de programmation</h3>
+        <h3>Langages de programmation</h3>
         <div className="carousel">  
           <div className="groupe">{langue}</div>
           <div className="groupe">{langue}</div>
@@ -31,7 +31,7 @@ const TechnologieList = () => {
           <div className="groupe">{frameworks}</div>
         </div>
         
-        <h3>Autre technologie</h3>
+        <h3>Autres technologies</h3>
         <div className="carousel">  
           <div className="groupe">{autre}</div>
           <div className="groupe">{autre}</div>

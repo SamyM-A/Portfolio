@@ -11,7 +11,6 @@ import Express from "./Express.png";
 import Vite from "./Vite.png";
 import Laravel from "./Laravel.png";
 
-
 import MongoDB from "./MongoDB.png";
 import Mysql from "./Mysql.png";
 import HTML from "./HTML.png";

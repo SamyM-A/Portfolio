@@ -6,7 +6,7 @@ import Projets from './sections/ProjectsLists';
 import Footer from './sections/Footer';
 import Contact from './sections/Contact';
 import Technologie from './sections/TechnologieLists';
-import Cv from "./sections/Cv";
+import Parcours from "./sections/Parcours";
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
   const technoRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-  const cvRef = useRef(null);
+  const parcoursRef = useRef(null);
 
   const scrollTo = (section) => {
     const sections = {
@@ -22,7 +22,7 @@ function App() {
       technologie: technoRef,
       projects: projectsRef,
       contact: contactRef,
-      cv: cvRef,
+      parcours: parcoursRef,
     };
 
     sections[section]?.current.scrollIntoView({
@@ -47,8 +47,8 @@ function App() {
           <Projets />
         </section>
 
-        <section ref={cvRef}>
-          {/* <Cv/> */}
+        <section ref={parcoursRef} className="parcours-section" aria-labelledby="parcours-title">
+          <Parcours />
         </section>
 
         <section ref={contactRef}>

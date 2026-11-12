@@ -13,15 +13,15 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px 70px;
-  background-color: #0C1220dd; 
+  padding: 12px 40px;
+  background-color: rgba(20, 20, 20, 0.92); 
   backdrop-filter: blur(8px);    
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
 }
 
 #h2 {
   display: flex;
-  gap: 20px;
+  gap: 6px;
 }
 
 #burger {
@@ -29,7 +29,7 @@
 }
 
 #header a {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -41,133 +41,15 @@
 }
 
 #header button {
-  margin: 0 10px;
+  margin: 0;
 
   background: none;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 8px 10px;
   font-size: 15px;
   cursor: pointer;
 
-}
-
-
-/* contact */
-/* contact */
-/* contact */
-
-#contactDiv {
-  padding: 32px 32px;
-  /* background-color: red; */
-}
-
-#contact {
-    margin: 100px auto;
-    width: 40%;
-    text-align: center;
-    padding: 32px 32px;
-    border-radius: 50px;
-    background-color: #00000023;
-}
-
-
-
-#h1contact{
-    text-align: center;
-    font-size: 60px;
-    margin: 100px 0px ;
-}
-
-/* DIV */
-
-
-#nomemail{
-  display: flex;
-  gap: 10px;
-    /* background-color: red; */
-}
-
-#contact #email, #nom{
-    font-size: 20px;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    background: none;
-    border-bottom: 2px solid #ffffff;
-}
-
-#contact #mess{
-  /* background-color: red; */
-    border-bottom: 2px solid #ffffff;
-    width: 100%;
-}
-
-#contact #message{
-  font-size: 20px;
-    border: none;
-    padding: 10px;
-    resize: none;
-    background: none;
-
-    display: flex;
-    margin: 20px auto auto 0px;
-}
-
-#contact #email:focus,
-#contact #nom:focus,
-#contact #message:focus {
-    outline: none;
-}
-
-
-
-
-
-#contact button{
-    font-size: 20px;
-    width: 200px;
-    padding: 10px;
-    margin: 50px 0px;
-    background: none; /* Green */
-    color: rgb(255, 255, 255);
-    border: 3px solid #ffffff; /* Green */
-    cursor: pointer;
-}
-
-
-
-
-
-
-#contactDiv #link{
-  display: flex;
-  text-decoration: none;
-  /* background-color: red; */
-  width: 70%;
-  margin: 0px auto;
-}
-
-.boite:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-}
-
-#link .boite{
-  width: 170px;
-  height: 50px;
-  padding: 5px 30px;
-  border-radius: 20px;
-  margin: 0px auto;
-  background-color: rgba(0, 0, 0, 0.349);
-  display: flex;
-  text-decoration: none;
-  color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#link .boite p{
-  margin: 15px auto;
 }
 
 
@@ -204,33 +86,37 @@
 /* Home*/
 
 #home1 {
-  max-width: 1300px;
+  max-width: 900px;
   margin: 0 auto 0 auto;
-  padding: 120px 32px;
+  padding: 64px 24px 72px;
   display: flex;
-  /* background-color: red; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #home1 h1 {
-  font-size: 60px;
-  /* margin: 100px 0px; */
-  text-align: center;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin: 32px 0 0;
 }
 
 
 #home1 p {
-  font-size: 20px;
-  line-height: 30px;
-  margin: 100px auto;
-}
-
-#home1 div{
-  margin: 0px 0px 0px 70px;
+  max-width: 660px;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 28px auto 0;
+  color: #d6d6d6;
 }
 
 #home1 img {
-  margin: 20px auto;
-  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 1%;
+  /* border: 6px solid #f5f5f5; */
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -240,24 +126,27 @@
 /* liste projet */
 
 .projectsListe{
-  /* max-width: 2300px; */
-  margin: 100px auto 0 auto;
+  max-width: 1200px;
+  margin: 48px auto 0 auto;
   padding: 32px 32px;
   
   /* background-color: red; */
 }
 
 .projectsListeListe{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 360px));
+  justify-content: center;
+  gap: 24px;
+  align-items: stretch;
 }
 
 
 
 .projectsListe #h1{
     text-align: center;
-    font-size: 60px;
-    margin: 100px 0px 30px 0px;
+    
+    margin: 40px 0px 24px 0px;
 }
 
 
@@ -272,12 +161,22 @@
 
 .projects h1{
   text-align: center;
-  margin: 15px 0px;
+  margin: 12px 0 8px;
 }
 
 .projects p{
-  margin: 15px 0px;
+  margin: 8px 0;
 }
+
+.project-contributors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 4px 0;
+}
+
+.project-contributors a { display: inline-flex; flex-shrink: 0; }
 
 .projects:hover {
   transform: translateY(-10px);
@@ -285,7 +184,21 @@
 }
 
 .projects .imglang{
-  margin: 0 5px;
+  margin: 0;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 .projects a{
@@ -295,13 +208,17 @@
 
 
 .projects {
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 35px;
-    width: 500px;
-    background-color: #0c1220;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 16px;
+    border-radius: 20px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    background-color: rgba(20, 20, 20, 0.92);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -330,20 +247,20 @@
 
 #technoHome{
   /* max-width: 1300px; */
-  margin: 100px auto 0 auto;
+  margin: 48px auto 0 auto;
   padding: 32px 32px;
   /* background-color: red; */
 }
 
 #technoHome h1{
-  margin: 70px 0px 30px 0px;
-  font-size: 70px;
+  margin: 40px 0px 24px 0px;
+  
   text-align: center;
 }
 
 
 #technoHome h3{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -381,9 +298,9 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  gap: 5em;
+  gap: 3em;
   animation: spin 10s infinite linear;
-  padding-right: 5em;
+  padding-right: 3em;
 
 }
 
@@ -409,7 +326,7 @@
 
 .cv {
   /* max-width: 2300px; */
-  margin: 100px auto 0 auto;
+  margin: 48px auto 0 auto;
   padding: 32px 32px;
   /* background-color: red; */
   display: flex;
@@ -422,12 +339,31 @@
 
 .cv h1{
   text-align: center;
-  font-size: 70px;
+  
   margin: 170px 0px 30px 0px;
   padding: 32px 32px;
 }
 
 
+
+/* Compact image sizes follow their containers on every screen. */
+#home1 img {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  aspect-ratio: 1;
+}
+
+.projects .imgprojet {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+.projects p { font-size: 14px; line-height: 1.5; }
+.projects .project-content img { width: 32px; height: 32px; object-fit: contain; }
+.tech img { width: 72px; height: 72px; object-fit: contain; }
 
 /* phone media */
 
@@ -453,13 +389,13 @@
   }
 
   #header a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
 
   #burger {
     display: block;
-    font-size: 30px;
+    font-size: 24px;
     background: none;
     border: none;
     color: white;
@@ -474,9 +410,9 @@
 
     flex-direction: column;
     align-items: center;
-    /* background-color: #0c1220c2; */
+    /* Menu mobile gris anthracite */
     
-    background-color: #0c1220; 
+    background-color: #303030; 
     backdrop-filter: blur(8px);    
     box-shadow: none; 
 
@@ -489,7 +425,7 @@
   }
 
   #h2 button {
-    padding: 15px 0;
+    padding: 12px 16px;
     font-size: 18px;
   }
 
@@ -498,26 +434,20 @@
 
   /* ===== HOME ===== */
   #home1 {
-    padding: 80px 16px;
+    padding: 48px 16px;
     display: block;
   }
   
   #home1 h1 {
-    font-size: 36px;
-    margin: 40px 0;
+    margin: 28px 0 0;
   }
   
   #home1 img {
     float: none;
     display: block;
     margin: auto  auto;
-    width: 250px;
-    height: 250px;
-  }
-  
-  #home1 div{
-    margin: 0;
-    /* background-color: red; */
+    width: 170px;
+    height: 170px;
   }
   
   #home1 p {
@@ -526,54 +456,21 @@
     width: 85%;
     font-size: 14px;
     line-height: 26px;
+    margin-top: 30px;
   }
 
   /* ===== PROJECTS ===== */
-  .projectsListeListe {
-    flex-direction: column;
-  }
+
 
   .projects {
-    width: 90%;
-    margin: 30px auto;
-    padding: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
   }
 
   .projects .imgprojet{
     width: 100%;
-    height: 200px;
-  }
-
-  .projects h1 {
-    font-size: 22px;
-  }
-
-  /* ===== CONTACT ===== */
-  #contact {
-    width: 80%;
-    border-radius: 30px;
-  }
-
-  #h1contact {
-    font-size: 36px;
-    margin: 40px 0;
-  }
-
-  #contact #message,
-  #contact #email,
-  #contact #nom {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  #contact button {
-    /* width: 100%; */
-  }
-
-  #contactDiv #link {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+    height: auto;
   }
 
   /* ===== TECHNO ===== */
@@ -585,12 +482,12 @@
 
   #technoHome h1 {
     margin: 0;
-    font-size: 40px;
+    
   }
 
   .tech img{
-    height: 70px;
-    width: 70px;
+    height: 56px;
+    width: 56px;
   }
 
   .carousel {
@@ -604,7 +501,7 @@
   }
 
   .cv h1 {
-    font-size: 40px;
+    
     margin: 40px 0;
   }
 
@@ -617,23 +514,8 @@
     padding: 60px 0 30px 0;
   }
 
-
-
-  #technoHome h1{
-    font-size: 32px;
-  }
-
   #technoHome h3{
     font-size: 16px;
-  }
-
-  .projectsListe #h1{
-    font-size: 32px;
-  }
-
-
-  #contactDiv #h1contact{
-    font-size: 32px;
   }
 
 
@@ -670,7 +552,7 @@
   }
 
 #home1 {
-    padding: 80px 16px;
+    padding: 48px 16px;
     display: block;
 
     /* background-color: red; */
@@ -683,8 +565,7 @@
 
   
   #home1 h1 {
-    font-size: 36px;
-    margin: 40px 0;
+    margin: 32px 0 0;
   }
 
 
@@ -696,13 +577,13 @@
   }
 
   #home1 h1{
-    font-size: 40px;
+    
     color: #ffffff;
   }
 
   #home1 img{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin: auto auto;
     /* float: right; */
   }
@@ -713,32 +594,65 @@
     margin: 0px;
     /* background-color: red; */
   }
-  
-  #technoHome h1{
-    font-size: 36px;
-  }
 
   #technoHome h3{
-    font-size: 20px;
-  }
-
-  .projectsListe #h1{
-    font-size: 36px;
-  }
-
-
-  #contactDiv #h1contact{
-    font-size: 36px;
-  }
-
-
-  #contactDiv #link{
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+    font-size: 16px;
   }
 
   .carousel{
     width: 80%;
   }
+}
+
+/* Shared title scale and minimal contact layout. */
+.parcours-section { scroll-margin-top: 90px; }
+.parcours { max-width: 960px; margin: 48px auto 0; padding: 32px 24px; }
+.parcours h1 { text-align: center; margin-bottom: 16px; }
+.parcours-intro { text-align: center; color: #aaa; line-height: 1.6; margin-bottom: 36px; }
+.parcours-liste { list-style: none; padding-left: 20px; border-left: 1px solid #333; }
+.parcours-etape { position: relative; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 24px; padding: 0 0 32px 12px; }
+.parcours-etape:last-child { padding-bottom: 0; }
+.parcours-etape::before { content: ""; position: absolute; left: -25px; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: #ddd; box-shadow: 0 0 0 5px #0d0d0d; }
+.parcours-meta { font-size: 13px; line-height: 1.7; color: #999; }
+.parcours-type { display: block; color: #ddd; margin-bottom: 4px; }
+.parcours-etape h2 { font-size: 20px; line-height: 1.4; margin-bottom: 6px; }
+.parcours-titre { color: #ddd; font-size: 15px; line-height: 1.6; }
+.parcours-lieu { color: #888; font-size: 13px; margin-top: 4px; }
+.parcours-description, .parcours-realisations { color: #aaa; font-size: 14px; line-height: 1.75; margin-top: 12px; }
+.parcours-realisations { padding-left: 18px; }
+.parcours-realisations li + li { margin-top: 6px; }
+@media (max-width: 680px) {
+  .parcours { padding: 24px 16px; }
+  .parcours-etape { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .parcours-etape h2 { font-size: 18px; }
+}
+
+/* Shared title scale and minimal contact layout. */
+:root { --h1-size: clamp(1.5rem, 2.5vw, 2rem); }
+h1 { font-size: var(--h1-size); line-height: 1.25; overflow-wrap: anywhere; }
+
+#contactDiv { max-width: 760px; margin: 64px auto; padding: 32px 24px; }
+#h1contact { text-align: center; margin-bottom: 16px; }
+.contact-intro { text-align: center; color: #aaa; line-height: 1.6; }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin: 24px 0 36px; }
+.contact-links a { display: inline-flex; align-items: center; gap: 8px; color: #ddd; font-size: 14px; text-decoration: none; }
+.contact-links img { width: 20px; height: 20px; object-fit: contain; }
+.contact-links a:hover { color: white; text-decoration: underline; }
+#contact { display: grid; gap: 20px; padding-top: 28px; border-top: 1px solid #333; }
+#nomemail { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+#contact label { display: grid; gap: 8px; min-width: 0; color: #ccc; font-size: 14px; }
+#contact input, #contact textarea { width: 100%; min-width: 0; padding: 12px; border: 1px solid #3a3a3a; border-radius: 6px; background: #141414; color: #fff; font: inherit; font-size: 16px; }
+#contact textarea { resize: vertical; min-height: 120px; }
+#contact input:focus-visible, #contact textarea:focus-visible, #contact button:focus-visible, .contact-links a:focus-visible { outline: 2px solid #aaa; outline-offset: 3px; }
+#contact input::placeholder, #contact textarea::placeholder { color: #777; }
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+#contact button { padding: 11px 24px; border: 1px solid #444; border-radius: 6px; background: #000; color: #fff; font: inherit; font-size: 14px; cursor: pointer; }
+#contact button:hover { background: #171717; border-color: #777; }
+#contact button:disabled { opacity: .6; cursor: wait; }
+.contact-status { flex: 1 1 200px; color: #ccc; font-size: 14px; line-height: 1.5; }
+@media (max-width: 680px) {
+  .projectsListe { padding: 24px 16px; }
+  .projectsListeListe { gap: 20px; }
+  #contactDiv { margin: 40px auto; padding: 24px 16px; }
+  #nomemail { grid-template-columns: 1fr; }
 }

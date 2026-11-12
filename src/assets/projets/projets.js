@@ -10,6 +10,15 @@ const projects = [
         contributor: "Ashank Bansi",
         language: ["React","Node","Express","Supabase","Stripe","Vite"],
         github: "https://github.com/Ashank-Bansi/ProjetSession-PrestigeCars"
+    },    
+    {
+        name: "GeoLocation AI",
+        description: "Application web de détéction de lieu a partir d'une image Google street View Grace a un algorithme de machine learning",
+        image: "Soon",
+        link: "Soon",
+        contributor: "",
+        language: ["React","Node","Express","Supabase","TypeScript"],
+        github: ">"
     },
 ]
 export default projects;

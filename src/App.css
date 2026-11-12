@@ -21,7 +21,7 @@
 
 #h2 {
   display: flex;
-  gap: 6px;
+  gap: 20px;
 }
 
 #burger {
@@ -41,12 +41,12 @@
 }
 
 #header button {
-  margin: 0;
+  margin: 0 10px;
 
   background: none;
   color: white;
   border: none;
-  padding: 8px 10px;
+  padding: 8px 16px;
   font-size: 15px;
   cursor: pointer;
 
@@ -96,8 +96,8 @@
 }
 
 #home1 h1 {
-  font-size: clamp(2rem, 4.5vw, 3rem);
-  margin: 32px 0 0;
+  
+  margin: 0 0 28px;
 }
 
 
@@ -110,6 +110,7 @@
 }
 
 #home1 img {
+  
   display: block;
   margin: 0 auto;
   border-radius: 50%;
@@ -135,9 +136,9 @@
 
 .projectsListeListe{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 360px));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 320px));
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -161,22 +162,12 @@
 
 .projects h1{
   text-align: center;
-  margin: 12px 0 8px;
+  margin: 15px 0px;
 }
 
 .projects p{
-  margin: 8px 0;
+  margin: 15px 0px;
 }
-
-.project-contributors {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 4px 0;
-}
-
-.project-contributors a { display: inline-flex; flex-shrink: 0; }
 
 .projects:hover {
   transform: translateY(-10px);
@@ -184,21 +175,7 @@
 }
 
 .projects .imglang{
-  margin: 0;
-}
-
-.project-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.project-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: auto;
-  padding-top: 10px;
+  margin: 0 5px;
 }
 
 .projects a{
@@ -208,8 +185,6 @@
 
 
 .projects {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 16px;
     border-radius: 20px;
@@ -218,7 +193,7 @@
     max-width: 100%;
     background-color: rgba(20, 20, 20, 0.92);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: stretch;
+    align-items: center;
 }
 
 
@@ -348,8 +323,8 @@
 
 /* Compact image sizes follow their containers on every screen. */
 #home1 img {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   max-width: 100%;
   aspect-ratio: 1;
 }
@@ -358,11 +333,11 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 5 / 3;
   object-fit: cover;
 }
-.projects p { font-size: 14px; line-height: 1.5; }
-.projects .project-content img { width: 32px; height: 32px; object-fit: contain; }
+.projects p { font-size: 14px; line-height: 1.6; }
+.projects #pasimg img { width: 32px; height: 32px; object-fit: contain; }
 .tech img { width: 72px; height: 72px; object-fit: contain; }
 
 /* phone media */
@@ -425,7 +400,7 @@
   }
 
   #h2 button {
-    padding: 12px 16px;
+    padding: 15px 0;
     font-size: 18px;
   }
 
@@ -439,15 +414,16 @@
   }
   
   #home1 h1 {
-    margin: 28px 0 0;
+    
+    margin: 40px 0;
   }
   
   #home1 img {
     float: none;
     display: block;
     margin: auto  auto;
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: auto;
   }
   
   #home1 p {
@@ -565,7 +541,8 @@
 
   
   #home1 h1 {
-    margin: 32px 0 0;
+    
+    margin: 40px 0;
   }
 
 
@@ -582,8 +559,8 @@
   }
 
   #home1 img{
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     margin: auto auto;
     /* float: right; */
   }
@@ -602,29 +579,6 @@
   .carousel{
     width: 80%;
   }
-}
-
-/* Shared title scale and minimal contact layout. */
-.parcours-section { scroll-margin-top: 90px; }
-.parcours { max-width: 960px; margin: 48px auto 0; padding: 32px 24px; }
-.parcours h1 { text-align: center; margin-bottom: 16px; }
-.parcours-intro { text-align: center; color: #aaa; line-height: 1.6; margin-bottom: 36px; }
-.parcours-liste { list-style: none; padding-left: 20px; border-left: 1px solid #333; }
-.parcours-etape { position: relative; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 24px; padding: 0 0 32px 12px; }
-.parcours-etape:last-child { padding-bottom: 0; }
-.parcours-etape::before { content: ""; position: absolute; left: -25px; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: #ddd; box-shadow: 0 0 0 5px #0d0d0d; }
-.parcours-meta { font-size: 13px; line-height: 1.7; color: #999; }
-.parcours-type { display: block; color: #ddd; margin-bottom: 4px; }
-.parcours-etape h2 { font-size: 20px; line-height: 1.4; margin-bottom: 6px; }
-.parcours-titre { color: #ddd; font-size: 15px; line-height: 1.6; }
-.parcours-lieu { color: #888; font-size: 13px; margin-top: 4px; }
-.parcours-description, .parcours-realisations { color: #aaa; font-size: 14px; line-height: 1.75; margin-top: 12px; }
-.parcours-realisations { padding-left: 18px; }
-.parcours-realisations li + li { margin-top: 6px; }
-@media (max-width: 680px) {
-  .parcours { padding: 24px 16px; }
-  .parcours-etape { grid-template-columns: minmax(0, 1fr); gap: 12px; }
-  .parcours-etape h2 { font-size: 18px; }
 }
 
 /* Shared title scale and minimal contact layout. */
@@ -652,7 +606,7 @@ h1 { font-size: var(--h1-size); line-height: 1.25; overflow-wrap: anywhere; }
 .contact-status { flex: 1 1 200px; color: #ccc; font-size: 14px; line-height: 1.5; }
 @media (max-width: 680px) {
   .projectsListe { padding: 24px 16px; }
-  .projectsListeListe { gap: 20px; }
+  .projectsListeListe { gap: 16px; }
   #contactDiv { margin: 40px auto; padding: 24px 16px; }
   #nomemail { grid-template-columns: 1fr; }
 }

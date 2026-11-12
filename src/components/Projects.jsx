@@ -10,22 +10,24 @@ const Projects = (props) => {
 
     return(        
     <div className="projects">
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
             <img className="imgprojet" src={props.image} height={300} width={500} alt="" />
-            <div id="pasimg">
+        </a>
+            <div className="project-content">
                     <div>
-                        <h1>{props.name}</h1>
-                        <a href={props.github} target="_blank"><img src={github} alt="" width={40}/></a>
+                        <h1><a href={props.link} target="_blank" rel="noopener noreferrer">{props.name}</a></h1>
                     </div>
                     <p>{props.description}</p>
-                    <p>With {props.contributor}</p>
-                    <div>
+                    <div className="project-contributors">
+                        <p>{props.contributor ? `With ${props.contributor}` : "Projet personnel"}</p>
+                        <a href={props.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Code source sur GitHub" width={32}/></a>
+                    </div>
+                    <div className="project-technologies">
                         {languages.map( l => 
-                            <img className="imglang" src={l.img} alt="" width={40}/>
+                            <img key={l.name} className="imglang" src={l.img} alt={l.name} width={40}/>
                         )}
                     </div>
             </div>
-        </a>
     </div>)
 
 }
